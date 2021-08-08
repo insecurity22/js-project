@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Cantarell&family=Ubuntu:wght@500&display=swap");
+
+body {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#clock {
+  font-family: "Ubuntu";
+  font-size: 120px;
+  color: white;
+  position: absolute;
+  top: 400px;
+}
+
+.login-form-wrap {
+  position: absolute;
+  top: 550px;
+}
+#login-form {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#login-form input {
+  border: none;
+  background-color: transparent;
+}
+#login-form input:first-child {
+  border-bottom: 3px solid gray;
+}
+#login-form input:last-child {
+  cursor: pointer;
+}
+#login-form input:focus {
+  outline: none;
+}
+#login-form input,
+#login-form input::placeholder,
+#greeting {
+  font-family: "Cantarell";
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+}
+
+#quote {
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 650px;
+  font-family: "Cantarell";
+  font-weight: 900;
+  font-size: 40px;
+  color: rgb(43 75 134);
+  margin: 0 30px;
+  text-align: center;
+}
+#quote span {
+  margin-top: 10px;
+  font-size: 27px;
+  color: rgb(93 117 160);
+  line-height: 35px;
+}
+#quote span:nth-child(2) {
+  display: inline-block;
+}
+
+.todo-wrap {
+  background-color: black;
+  width: 280px;
+  height: 480px;
+  opacity: 0.5;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px;
+}
+.todo-wrap > h2 {
+  font-size: 30px;
+  font-family: "Cantarell";
+  margin-bottom: 20px;
+}
+.todo-wrap #todo-form input {
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  width: 280px;
+}
+.todo-wrap #todo-form input:focus {
+  outline: none;
+}
+.todo-wrap #todo-form input::placeholder {
+  color: gray;
+}
+.todo-wrap #todo-list > li {
+  margin: 15px 0;
+}
+.todo-wrap #todo-list > li > button {
+  position: absolute;
+  right: 10px;
+}
+
+#weather {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Rock Salt";
+}

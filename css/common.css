@@ -1,0 +1,12 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
